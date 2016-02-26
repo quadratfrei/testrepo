@@ -1,0 +1,7 @@
+apt-get update
+apt-get install apache
+save
+apt-get install php
+save
+apt-get install mysql
+save
