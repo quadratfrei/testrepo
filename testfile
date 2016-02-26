@@ -1,7 +1,7 @@
-apt-get update
-apt-get install apache
-save
-apt-get install php
-save
-apt-get install mysql
-save
+FROM ubuntu:trusty
+MAINTAINER deinemudder@potztausend.de
+#für den webserver im container soll port 80 überwacht werden
+EXPOSE 80
+#am besten wird alles mit einer Zeile abgefrühstückt
+RUN sudo apt-get install -y apache2 php5 mysql-server mysql-client
+RUN /bin/bash "Die Einrichtung ist erfolgreich abgeschlossen"
